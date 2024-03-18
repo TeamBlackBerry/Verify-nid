@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/verify-nid', methods=['GET'])
+@app.route('/', methods=['GET'])
 def verify_nid():
     nid = request.args.get('nid')
     dob = request.args.get('dob')
